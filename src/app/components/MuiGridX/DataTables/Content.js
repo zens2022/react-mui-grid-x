@@ -3,16 +3,16 @@ import { useContext } from "react";
 import { MuiGridXContent } from "../MuiGridXProvider";
 
 export const Content = () => {
-    const { state: { columns, list } } = useContext(MuiGridXContent);
+    const { state: { columns, renderList } } = useContext(MuiGridXContent);
     return (
         <TableBody>
-            {list.map((row, idx) => (
-                <TableRow {...{
-                    key: idx,
-                    sx: { '&:last-child td, &:last-child th': { border: 0 } }
-                }}>
-                    {columns.map(({ data }, idx) => (
-                        <TableCell key={idx}>
+            {renderList.map((row, rowIndex) => (
+                <TableRow
+                    key={`row-${rowIndex}`}
+                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                >
+                    {columns.map(({ data }, columnIndex) => (
+                        <TableCell key={`cell-${rowIndex}-${columnIndex}`}>
                             {row[data]}
                         </TableCell>
                     ))}
