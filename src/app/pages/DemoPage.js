@@ -31,8 +31,6 @@ export const DemoPage = () => {
         data: 'column5'
     }];
 
-
-
     return (
         <Container>
             <Button
