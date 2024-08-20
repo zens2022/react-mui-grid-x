@@ -3,10 +3,10 @@
 ## Demo
 
 ### Use Docker
-
+#### windows
 ``` sh
-> docker build -t react-mui-grid-x .
-> docker run -d -p 3000:3000 react-mui-grid-x
+> npm ci
+> npm run win-docker
 ```
 
 ### Use NodeJS
