@@ -1,9 +1,6 @@
-FROM node:20-alpine
+FROM nginx:1.26.2-alpine
 
-WORKDIR /app
+WORKDIR /usr/share/nginx/html
 
-COPY . .
-
-RUN npm ci
-
-CMD npm start
+COPY /build/. .
+COPY default.conf /etc/nginx/conf.d/.
