@@ -3,7 +3,7 @@ import { MuiGridX } from "../components/MuiGridX/MuiGridX";
 import _ from "lodash";
 import { useState } from "react";
 
-export const DemoPage = () => {
+export const MuiGridXDemoPage = () => {
     const getList = () => _.range(_.random(10, 60)).map(value => ({
         column1: value,
         column2: value,
