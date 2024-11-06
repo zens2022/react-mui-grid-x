@@ -1,7 +1,6 @@
 {
   "name": "mui-grid-x",
   "version": "1.0.0",
-  "private": true,
   "author": "zens",
   "main": "src/main.js",
   "dependencies": {
