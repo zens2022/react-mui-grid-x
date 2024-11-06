@@ -4,7 +4,7 @@ import _ from "lodash";
 import { useState } from "react";
 import moment from "moment";
 
-export const MuiGridXDemoPage = () => {
+export const DemoPage = () => {
     const getList = () => _.range(_.random(10, 60)).map(value => ({
         column1: moment().add(value, 'hours').format('YYYY-MM-DD HH:mm'),
         column2: value,

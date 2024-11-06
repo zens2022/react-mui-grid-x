@@ -1,12 +1,4 @@
 export const sidebar = [{
-    text: "Home",
+    text: "Demo",
     href: "/"
-}, {
-    text: "Components"
-}, {
-    text: "MuiGridX",
-    href: "/mui-grid-x"
-},{
-    text: "Todo List",
-    href: "/todo-list"
 }];

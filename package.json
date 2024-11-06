@@ -1,7 +1,9 @@
 {
-  "name": "frontend",
-  "version": "0.1.0",
+  "name": "mui-grid-x",
+  "version": "1.0.0",
   "private": true,
+  "author": "zens",
+  "main": "src/main.js",
   "dependencies": {
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",

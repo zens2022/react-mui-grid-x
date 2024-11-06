@@ -8,7 +8,7 @@ import { sidebar } from './app/config/app';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <MainLayout
-    title="zens tool sytem"
+    title="MuiGridX"
     sidebar={sidebar}
   >
     <RouteList />
